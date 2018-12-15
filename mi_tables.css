@@ -4,32 +4,59 @@
    New Perspectives on HTML and CSS
    Tutorial 6
    Case Problem 1
-
    Tables Style Sheet
-   Author: Christopher Kim 
-   Date:   12.10.18
-
+   Author: Christopher Kim
+   Date:   12/10/18
    Filename:         mi_tables.css
-
 */
 
 /* Table Styles */
+table {
+    background: linear-gradient(rgb(190, 215, 255), black);
+    border: 5px solid gray;
+    width: 80%;
+    margin: 50px auto;
+}
 
+td {
+    border: 3px solid gray;
+    line-height: 1.4em;
+    padding: 8px;
 
+    color: white;
+    font-size: 0.9em;
+    vertical-align: top;
+}
+
+th {
+    border: 3px solid gray;
+    line-height: 1.4em;
+    padding: 8px;
+
+    font-weight: normal;
+    background-color: black;
+    color: rgb(130, 210, 255);
+}
 
 /* Column Styles */
+col#firstcol {
+    width: 24%;
+}
 
-
+col#dataCol {
+    width: 19%;
+}
 
 /* Table Header Styles */
+thead {
+    height: 60px;
+}
 
+thead th#theadThFirst {
+    font-size: 2em;
+}
 
-
-
-
-
-
-
-
-
-
+thead th.theadTopRow {
+    background: transparent;
+    color: black;
+}
